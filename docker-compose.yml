@@ -18,8 +18,8 @@ services:
       TS3SERVER_DB_WAITUNTILREADY: 30
       TS3SERVER_LICENSE: accept
     depends_on: 
-        - db
-  db:
+        - ts-db
+  ts-db:
     image: mariadb
     container_name: ts3-db
     restart: unless-stopped
